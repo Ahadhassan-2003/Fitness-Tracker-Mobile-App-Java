@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+    <uses-permission android:name="android.permission.SENSOR" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FitnessTracker"
+        tools:targetApi="31">
+        <activity
+            android:name=".EnterCalories_Screen"
+            android:exported="false" />
+        <activity
+            android:name=".Pushups_Screen"
+            android:exported="false" />
+        <activity
+            android:name=".BodyComposition_Screen"
+            android:exported="false" />
+        <activity
+            android:name=".EnterBodyComposition"
+            android:exported="false" />
+        <activity
+            android:name=".Cycling_Screen"
+            android:exported="false" />
+        <activity
+            android:name=".Running_Screen"
+            android:exported="false" />
+        <activity
+            android:name=".Walking_Screen"
+            android:exported="false" />
+
+        <service
+            android:name=".StepCountService"
+            android:foregroundServiceType="dataSync" />
+
+        <activity
+            android:name=".Signup_screen"
+            android:exported="false" />
+        <activity
+            android:name=".StepsMenu"
+            android:exported="false" />
+        <activity
+            android:name=".User_profile"
+            android:exported="false" />
+        <activity
+            android:name=".Fitness_screen"
+            android:exported="false" />
+        <activity
+            android:name=".menu_screen"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pushups_Screen">
+    <TextView
+        android:id="@+id/caloriesburnedtextview_pushups"
+        android:layout_width="329dp"
+        android:layout_height="60dp"
+        android:background="@drawable/textview_background"
+        android:ems="10"
+        android:fontFamily="@font/samsungsharpsansbold"
+        android:text="Calories burned: 0 cal"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.709" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/resetButton_pushups"
+        style="@style/ShapeAppearanceOverlay.Material3.FloatingActionButton"
+        android:layout_width="120dp"
+        android:layout_height="64dp"
+        android:backgroundTint="@color/teal_200"
+        android:fontFamily="@font/samsungsharpsansbold"
+        android:text="Reset"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.766"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.458" />
+
+    <Chronometer
+        android:id="@+id/stopwatchChronometer_pushups"
+        android:layout_width="230dp"
+        android:layout_height="116dp"
+        android:background="@drawable/textview_background"
+        android:fontFamily="@font/samsungsharpsansbold"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="64sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.234" />
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/startStopButton_pushups"
+        style="@style/ShapeAppearanceOverlay.Material3.FloatingActionButton"
+        android:layout_width="120dp"
+        android:layout_height="64dp"
+        android:backgroundTint="@color/teal_200"
+        android:fontFamily="@font/samsungsharpsansbold"
+        android:text="Start"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.216"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.458" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

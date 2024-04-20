@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EnterBodyComposition">
+
+    <EditText
+        android:id="@+id/enterskeletalmuscle_edittext"
+        android:layout_width="276dp"
+        android:layout_height="56dp"
+        android:background="@drawable/textview_background"
+        android:ems="10"
+        android:fontFamily="@font/samsungsharpsansbold"
+        android:inputType="textEmailAddress"
+        android:text="Skeletal muscle in kg"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.56" />
+
+    <EditText
+        android:id="@+id/enterweight_edittext"
+        android:layout_width="276dp"
+        android:layout_height="56dp"
+        android:background="@drawable/textview_background"
+        android:ems="10"
+        android:fontFamily="@font/samsungsharpsansbold"
+        android:inputType="textEmailAddress"
+        android:text="Weight in kg"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.272" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/finalenterbodycomposition_button"
+        style="@style/ShapeAppearanceOverlay.Material3.FloatingActionButton"
+        android:layout_width="131dp"
+        android:layout_height="54dp"
+        android:backgroundTint="@color/teal_200"
+        android:fontFamily="@font/samsungsharpsansbold"
+        android:text="Enter"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.7" />
+
+    <EditText
+        android:id="@+id/enterbodyfat_edittext"
+        android:layout_width="276dp"
+        android:layout_height="56dp"
+        android:background="@drawable/textview_background"
+        android:ems="10"
+        android:fontFamily="@font/samsungsharpsansbold"
+        android:inputType="textEmailAddress"
+        android:text="Body Fat in%"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.422" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
